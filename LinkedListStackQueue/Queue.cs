@@ -28,6 +28,16 @@ namespace LinkedListStackQueue
                 Console.WriteLine("{0} is inserted into the Queue ", newNode.data);
             }
         }
+        public void Dequeue()
+        {
+            if (head == null)
+                Console.WriteLine("Queue is Empty");
+            else
+            {
+                Console.WriteLine("{0} is removed from the Queue", head.data);
+                head = head.next;
+            }
+        }
         public void Display()
         {
             Console.WriteLine("QUEUE");
